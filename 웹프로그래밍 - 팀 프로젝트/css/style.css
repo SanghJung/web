@@ -1,0 +1,117 @@
+@import "header.css";
+@import "main.css";
+@import "submenu.css";
+@import "section.css";
+@import "footer.css";
+@import "project.css";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Work+Sans:wght@400;600&display=swap");
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background: var(--white);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  transition: background-color 3s;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --black: #222;
+  --white: #fff;
+  --shine: rgba(0, 0, 0, 0.2);
+  --darkblack: rgba(0, 0, 0, 0.2);
+}
+
+.dark {
+  --black: #fff;
+  --white: #222;
+  --shine: rgba(255, 245, 185, 0.8);
+  --darkblack: rgba(0, 0, 0, 1);
+}
+
+.dark .image__mask {
+  filter: invert(1);
+  mix-blend-mode: multiply;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.canvas {
+  width: 1200px;
+  height: 700px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(69, 69, 95, 0.11), 0 1px 3px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+}
+
+.controls {
+  margin-top: 50px;
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__colors {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(69, 69, 95, 0.11), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.controls__button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.controls__button button:active {
+  transform: scale(0.98);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+/* 메모장 */
+
+textarea {
+  display: flex;
+  width: 1200px;
+  height: 700px;
+  font-size: 10px;
+  font-family: "Orbitron", sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(69, 69, 95, 0.11), 0 1px 3px rgba(0, 0, 0, 0.06);
+  margin-top: 50px;
+  resize: none;
+}
